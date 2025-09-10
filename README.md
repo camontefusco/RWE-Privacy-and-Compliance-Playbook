@@ -2,6 +2,8 @@
 
 **Automated checks and scorecards to evaluate Real-World Data (RWD/RWE) pipelines against privacy and regulatory requirements (HIPAA, GDPR, DUA).**
 
+![Banner](banner.png)
+
 ---
 
 ## 📖 Overview
