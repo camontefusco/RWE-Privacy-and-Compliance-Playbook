@@ -1,0 +1,53 @@
+{
+  "generated_at": "2025-09-11T16:01:02.294350Z",
+  "source_files": {
+    "privacy_report_json": "/Users/cmontefusco/Coding projects/RWE-Privacy-and-Compliance-Playbook/data/privacy_report.json",
+    "deidentification_scorecard_json": "/Users/cmontefusco/Coding projects/RWE-Privacy-and-Compliance-Playbook/data/deidentification_scorecard.json"
+  },
+  "hipaa": {
+    "ok": true,
+    "detail": {
+      "present_before": [
+        "email",
+        "mrn",
+        "name"
+      ],
+      "present_after": [],
+      "note": "AFTER assumed from Notebook 02 (direct IDs dropped)."
+    }
+  },
+  "gdpr": {
+    "status": "PASS",
+    "detail": {
+      "k_after": 97.0,
+      "l_after": 7.0,
+      "quasi_final": [
+        "bp_category",
+        "dob",
+        "ethnicity",
+        "sex",
+        "visit_date"
+      ],
+      "risk_index": 0.2349042709867452,
+      "thresholds": {
+        "k": 5,
+        "l": 2,
+        "risk_index_max": 0.3
+      }
+    }
+  },
+  "dua": {
+    "status": "PASS",
+    "detail": {
+      "answers": {
+        "purpose_limited": true,
+        "retention_defined": true,
+        "in_region": true,
+        "third_parties_vetted": true
+      },
+      "score": 1.0,
+      "threshold": 0.75
+    }
+  },
+  "compliance_index": 0.906038291605302
+}

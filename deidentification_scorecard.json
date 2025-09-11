@@ -1,0 +1,60 @@
+{
+  "dataset": "/Users/cmontefusco/Coding projects/RWE-Privacy-and-Compliance-Playbook/data/sample_synthetic.csv",
+  "sensitive_col": "condition",
+  "targets": {
+    "k": 5,
+    "l": 2
+  },
+  "quasi": {
+    "before": [
+      "birth_year",
+      "bp_category",
+      "city",
+      "condition",
+      "county",
+      "dob",
+      "ethnicity",
+      "icd10",
+      "med_main",
+      "payer",
+      "race",
+      "sex",
+      "site_id",
+      "state",
+      "visit_date",
+      "zip5"
+    ],
+    "final": [
+      "bp_category",
+      "dob",
+      "ethnicity",
+      "sex",
+      "visit_date"
+    ]
+  },
+  "before": {
+    "k": 1.0,
+    "l": 1.0
+  },
+  "after": {
+    "k": 97.0,
+    "l": 7.0
+  },
+  "actions": {
+    "generalization": [
+      "dates \u2192 year",
+      "dates \u2192 year_quarter",
+      "dates \u2192 decade",
+      "birth_year \u2192 age_band(10y)",
+      "geo \u2192 zip3 + state + region (drop city/county)",
+      "geo \u2192 region_only",
+      "bucket categories \u2192 rare<0.05, topN<=6",
+      "After generalization: k=1.0, l=1.0 with 16 quasi"
+    ],
+    "pruning": [
+      "drop 'payer' \u2192 k\u219297"
+    ],
+    "suppression": []
+  },
+  "run_at": "2025-09-11T15:50:48.998871Z"
+}

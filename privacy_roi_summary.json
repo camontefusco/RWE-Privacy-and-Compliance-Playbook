@@ -1,0 +1,34 @@
+{
+  "generated_at": "2025-09-11T16:43:29.772358Z",
+  "inputs": {
+    "k": 97.0,
+    "l": 7.0,
+    "quasi": [
+      "bp_category",
+      "dob",
+      "ethnicity",
+      "sex",
+      "visit_date"
+    ],
+    "gdpr_risk": 0.2349042709867452,
+    "hipaa_ok": true,
+    "compliance_index": 0.906038291605302
+  },
+  "params": {
+    "prob_incident_wo": 0.22,
+    "prob_incident_w": 0.06,
+    "incident_loss_usd": 2000000,
+    "months_saved": 0,
+    "monthly_value": 500000,
+    "safeguard_cost_npv": 250000,
+    "rate": 0.08,
+    "horizon_years": 2
+  },
+  "roi": {
+    "avoided_loss": 320000.0,
+    "time_benefit": 0.0,
+    "cost_npv": 250000,
+    "net_benefit": 70000.0,
+    "bcr": 1.28
+  }
+}

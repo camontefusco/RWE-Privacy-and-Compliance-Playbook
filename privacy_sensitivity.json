@@ -1,0 +1,110 @@
+[
+  {
+    "param": "sg.risk_reduction_relative",
+    "value": 0.3,
+    "expected_loss_without": 440000.0,
+    "expected_loss_with": 251999.99999999997,
+    "avoided_loss": 188000.00000000003,
+    "time_benefit": 0.0,
+    "safeguard_cost_npv": 1574780.889633126,
+    "net_benefit": -1386780.889633126,
+    "benefit_cost_ratio": 0.1193816874700569,
+    "payback_years": 8.376494093793223
+  },
+  {
+    "param": "sg.risk_reduction_relative",
+    "value": 0.5,
+    "expected_loss_without": 440000.0,
+    "expected_loss_with": 180000.0,
+    "avoided_loss": 260000.0,
+    "time_benefit": 0.0,
+    "safeguard_cost_npv": 1574780.889633126,
+    "net_benefit": -1314780.889633126,
+    "benefit_cost_ratio": 0.16510233373518504,
+    "payback_years": 6.0568495755120235
+  },
+  {
+    "param": "sg.risk_reduction_relative",
+    "value": 0.7,
+    "expected_loss_without": 440000.0,
+    "expected_loss_with": 108000.00000000001,
+    "avoided_loss": 332000.0,
+    "time_benefit": 0.0,
+    "safeguard_cost_npv": 1574780.889633126,
+    "net_benefit": -1242780.889633126,
+    "benefit_cost_ratio": 0.21082298000031321,
+    "payback_years": 4.743315932629898
+  },
+  {
+    "param": "sg.risk_reduction_relative",
+    "value": 0.9,
+    "expected_loss_without": 440000.0,
+    "expected_loss_with": 35999.99999999999,
+    "avoided_loss": 404000.0,
+    "time_benefit": 0.0,
+    "safeguard_cost_npv": 1574780.889633126,
+    "net_benefit": -1170780.889633126,
+    "benefit_cost_ratio": 0.25654362626544136,
+    "payback_years": 3.8979724990918965
+  },
+  {
+    "param": "ts.prob_incident_per_year",
+    "value": 0.02,
+    "expected_loss_without": 110000.0,
+    "expected_loss_with": 36000.0,
+    "avoided_loss": 74000.0,
+    "time_benefit": 0.0,
+    "safeguard_cost_npv": 1574780.889633126,
+    "net_benefit": -1500780.889633126,
+    "benefit_cost_ratio": 0.04699066421693728,
+    "payback_years": 21.280822832880084
+  },
+  {
+    "param": "ts.prob_incident_per_year",
+    "value": 0.05,
+    "expected_loss_without": 275000.0,
+    "expected_loss_with": 90000.00000000001,
+    "avoided_loss": 185000.0,
+    "time_benefit": 0.0,
+    "safeguard_cost_npv": 1574780.889633126,
+    "net_benefit": -1389780.889633126,
+    "benefit_cost_ratio": 0.11747666054234321,
+    "payback_years": 8.512329133152033
+  },
+  {
+    "param": "ts.prob_incident_per_year",
+    "value": 0.08,
+    "expected_loss_without": 440000.0,
+    "expected_loss_with": 144000.0,
+    "avoided_loss": 296000.0,
+    "time_benefit": 0.0,
+    "safeguard_cost_npv": 1574780.889633126,
+    "net_benefit": -1278780.889633126,
+    "benefit_cost_ratio": 0.18796265686774913,
+    "payback_years": 5.320205708220021
+  },
+  {
+    "param": "ts.prob_incident_per_year",
+    "value": 0.12,
+    "expected_loss_without": 660000.0,
+    "expected_loss_with": 216000.0,
+    "avoided_loss": 444000.0,
+    "time_benefit": 0.0,
+    "safeguard_cost_npv": 1574780.889633126,
+    "net_benefit": -1130780.889633126,
+    "benefit_cost_ratio": 0.2819439853016237,
+    "payback_years": 3.5468038054800135
+  },
+  {
+    "param": "ts.prob_incident_per_year",
+    "value": 0.15,
+    "expected_loss_without": 825000.0,
+    "expected_loss_with": 270000.0,
+    "avoided_loss": 555000.0,
+    "time_benefit": 0.0,
+    "safeguard_cost_npv": 1574780.889633126,
+    "net_benefit": -1019780.8896331261,
+    "benefit_cost_ratio": 0.35242998162702965,
+    "payback_years": 2.837443044384011
+  }
+]

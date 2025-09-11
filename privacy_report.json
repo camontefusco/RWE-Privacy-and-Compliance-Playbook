@@ -1,0 +1,91 @@
+{
+  "summary": {
+    "n_rows": 10000,
+    "n_cols": 28,
+    "sensitive_col": "condition"
+  },
+  "roles": {
+    "id_cols": [
+      "patient_id",
+      "name",
+      "email",
+      "phone",
+      "mrn",
+      "site_id"
+    ],
+    "date_cols": [
+      "dob",
+      "birth_year",
+      "visit_date"
+    ],
+    "numeric_cols": [
+      "patient_id",
+      "birth_year",
+      "zip5",
+      "polypharmacy_count",
+      "a1c",
+      "bp_sys",
+      "bp_dia",
+      "claim_amount",
+      "adverse_event",
+      "readmit_30d"
+    ],
+    "categorical_cols": [
+      "name",
+      "email",
+      "phone",
+      "mrn",
+      "dob",
+      "sex",
+      "race",
+      "ethnicity",
+      "state",
+      "city",
+      "county",
+      "visit_date",
+      "icd10",
+      "condition",
+      "med_main",
+      "bp_category",
+      "site_id",
+      "payer"
+    ]
+  },
+  "direct_identifiers": [
+    "email",
+    "mrn",
+    "name",
+    "phone"
+  ],
+  "quasi_identifiers": [
+    "birth_year",
+    "bp_category",
+    "city",
+    "condition",
+    "county",
+    "dob",
+    "ethnicity",
+    "icd10",
+    "med_main",
+    "payer",
+    "race",
+    "sex",
+    "site_id",
+    "state",
+    "visit_date",
+    "zip5"
+  ],
+  "metrics": {
+    "k_anonymity": 1,
+    "l_diversity": 1.0,
+    "t_closeness": null,
+    "risk_score": 1.0
+  },
+  "suggestions": {
+    "zip5": "Generalize to first 3 digits (US ZIP3) or to region",
+    "birth_year": "Bin numeric into deciles/quantiles",
+    "visit_date": "Generalize to year or month (e.g., YYYY or YYYY-MM)",
+    "dob": "Generalize to year or month (e.g., YYYY or YYYY-MM)",
+    "site_id": "Bucket rare categories into 'Other' (e.g., top-10 + Other)"
+  }
+}
